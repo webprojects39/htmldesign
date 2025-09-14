@@ -1,0 +1,73 @@
+body{
+    background-color: bisque;
+}
+
+header{
+    background-color: beige;
+    position: relative;
+    z-index: 1;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background-image: url("../images/Pixels1.png");
+    opacity: 0.35;
+    z-index: -1;
+}
+
+h1{
+    color: seagreen;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul li {
+    flex: 1;
+}
+
+.offpage{
+    position: relative;
+    top: -40px;    
+    left: 0;
+    z-index: 1000;
+}
+
+.offpage:focus{
+    top: 0px;
+    z-index: 1000;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex img:nth-child(odd) {
+    border: 20px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.flex img:nth-child(even){
+    border: 20px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.flex img:hover {
+    transform: scale(1.1);
+}
